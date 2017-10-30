@@ -2,7 +2,7 @@
 
   
        
- #Для darknet_new 
+ # Для darknet_new 
 	./darknet yolo train cfg/yolo.cfg extraction.conv.weights
 	запускаем обучение. 
 	В папке imgs - фото и их описания в формате Pascal VOC. 
@@ -10,7 +10,7 @@
 
 	Если есть фото и описания, но нет train.txt то запускаем VKmake_train.py
 
-#Следующие команды для /working_net. 
+# Следующие команды для /working_net. 
 
 	./darknet yolo demo_cam  cfg/yolo.cfg backup/yolo_final_v2.weights -c 0 -thresh 0.45
 	для того чтобы запустить распознавание на камере. -c 0 это номер камеры. -thresh 0.45 это порог от 0 до 1. Чем ниже порог тем больше ложных срабатываний. 
